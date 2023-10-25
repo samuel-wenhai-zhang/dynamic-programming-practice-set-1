@@ -11,7 +11,7 @@ public class DigitSum2 {
             int total = 0;
             for (int i = 0; i < num.length(); i++) {
                 int digit = getDigit(num, i);
-                total += Integer.parseInt(num) / (int)(Math.pow(10, i + 1)) * 45 + getDigit(num, i) * (getDigit(num, i) + 1) / 2 * Math.pow(10, i);
+                total += Integer.parseInt(num) / (int)(Math.pow(10, i + 1)) * 45 + digit * (digit + 1) / 2 * Math.pow(10, i);
             }
             System.out.println(total);
             
